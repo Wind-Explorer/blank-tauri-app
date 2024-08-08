@@ -1,7 +1,10 @@
-# Tauri + React + Typescript
+# Tauri + React + Vite + Typescript + TailwindCSS + NextUI + React Router DOM
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+Adam's custom tauri app template for rapid prototyping
 
-## Recommended IDE Setup
+Uses Tauri 2.0 RC.
+- Light / Dark mode support
+- Routing support
+- Window resize optimization
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+All that needs to be done is to hit `Cmd` + `Shift` + `H` to replace all occurances of `blank-tauri-app` with a custom app name.
