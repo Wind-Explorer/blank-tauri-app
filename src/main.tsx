@@ -5,6 +5,10 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App.tsx";
 import "./index.css";
 
+document.addEventListener("contextmenu", (event) => {
+  event.preventDefault();
+});
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>

@@ -1,0 +1,12 @@
+{
+  "identifier": "cn.wind-explorer.blank-tauri-app",
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "hiddenTitle": true,
+        "titleBarStyle": "Overlay"
+      }
+    ]
+  }
+}

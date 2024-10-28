@@ -1,7 +1,9 @@
+import PrivyetMir from "../components/PrivyetMir";
+
 export default function HomePage() {
   return (
-    <div className="p-10">
-      <p className="text-3xl">blank-tauri-app</p>
+    <div className="absolute inset-0 w-full h-full">
+      <PrivyetMir />
     </div>
   );
 }
