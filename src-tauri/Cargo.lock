@@ -143,6 +143,9 @@ dependencies = [
 name = "blank-tauri-app"
 version = "0.0.0"
 dependencies = [
+ "cocoa",
+ "objc",
+ "rand 0.8.5",
  "serde",
  "serde_json",
  "specta",

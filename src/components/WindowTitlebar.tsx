@@ -39,7 +39,7 @@ export default function WindowTitlebar() {
           className={
             isMaximized
               ? "relative w-full h-[25px]"
-              : "relative w-full h-[30px]"
+              : "relative w-full h-[32px]"
           }
         >
           <div className="w-full h-full *:my-auto flex flex-row justify-between">
@@ -95,7 +95,7 @@ export default function WindowTitlebar() {
         </div>
       )}
       {platformName === "macos" && !isMaximized && (
-        <div data-tauri-drag-region className="relative w-full h-[28px]"></div>
+        <div data-tauri-drag-region className="relative w-full h-[32px]"></div>
       )}
     </>
   );

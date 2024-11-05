@@ -1,3 +1,5 @@
+mod tauri_traffic_light_positioner_plugin;
+
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     let builder =
@@ -12,6 +14,7 @@ pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_shell::init())
         .plugin(tauri_plugin_os::init())
+        .plugin(tauri_traffic_light_positioner_plugin::init())
         .invoke_handler(builder.invoke_handler())
         .on_window_event(|_, event| match event {
             tauri::WindowEvent::Resized(_) => {
