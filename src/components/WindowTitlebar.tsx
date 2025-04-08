@@ -2,13 +2,19 @@ import { platform } from "@tauri-apps/plugin-os";
 import { getCurrentWindow } from "@tauri-apps/api/window";
 import { useEffect, useState } from "react";
 import { debounce } from "lodash";
+import { isTauriApp } from "../util";
 
 export default function WindowTitlebar() {
+  if (!isTauriApp()) {
+    return null;
+  }
   const [isMaximized, setIsMaximized] = useState<boolean>(false);
   const appWindow = getCurrentWindow();
   const platformName = platform();
 
   useEffect(() => {
+    if (!appWindow || !platformName) return;
+
     const updateMaximizedState = async () => {
       const maximized =
         platformName === "macos"

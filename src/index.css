@@ -14,6 +14,26 @@
     -ms-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
+}
 
-    cursor: default;
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+.titlebar-height-padding {
+    @apply pt-[32px];
+}
+
+.titlebar-height-margin {
+    @apply mt-[32px];
+}
+
+.titlebar-height {
+    @apply h-[32px];
 }
