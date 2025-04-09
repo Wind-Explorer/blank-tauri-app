@@ -7,9 +7,9 @@ use tauri::{
 
 pub fn init<R: Runtime>() -> TauriPlugin<R> {
     Builder::new("traffic_light_positioner")
-        .on_window_ready(|window| {
+        .on_window_ready(|_window| {
             #[cfg(target_os = "macos")]
-            osx::setup_traffic_light_positioner(window);
+            osx::setup_traffic_light_positioner(_window);
             return;
         })
         .build()
