@@ -1,3 +1,5 @@
+import { Sparkles } from "lucide-react";
+
 export default function HomePage() {
   return (
     <div className="absolute inset-0 w-full h-full">
@@ -7,10 +9,13 @@ export default function HomePage() {
           <img
             src="https://avatars.githubusercontent.com/u/66894537"
             alt="Github Profile Image"
-            className="w-16 h-16 rounded-full"
+            className="w-16 h-16 rounded-full border border-foreground/25"
           />
           <div className="flex flex-col gap-2">
-            <p className="text-xl">Adam's Template Tauri App</p>
+            <span className="flex flex-row gap-2 items-center">
+              <p className="text-xl">Adam's Template Tauri App</p>
+              <Sparkles size={23} color="orange" />
+            </span>
             <div className="flex flex-col text-sm opacity-70">
               <a
                 href="https://github.com/Wind-Explorer/blank-tauri-app"
@@ -24,8 +29,8 @@ export default function HomePage() {
               <a href="https://tailwindcss.com/" target="_blank">
                 tailwindcss.com
               </a>
-              <a href="https://tabler.io/icons" target="_blank">
-                tabler.io/icons
+              <a href="https://lucide.dev/icons" target="_blank">
+                lucide.dev/icons
               </a>
               <a href="https://tauri.app/" target="_blank">
                 tauri.app
