@@ -8,7 +8,7 @@ export default function DefaultLayout() {
         <div className="z-50">
           <WindowTitlebar />
         </div>
-        <div className="relative flex-grow h-full max-h-full overflow-auto">
+        <div className="relative flex-grow h-full max-h-full overflow-auto bg-neutral-500/10">
           <Outlet />
         </div>
       </div>

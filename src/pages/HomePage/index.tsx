@@ -1,10 +1,13 @@
-import { Sparkles } from "lucide-react";
+import { Button } from "@heroui/react";
+import { Settings, Sparkles } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
+  const navigate = useNavigate();
   return (
     <div className="absolute inset-0 w-full h-full">
       {/* Beginning of starter */}
-      <div className="p-8 h-full bg-neutral-500/10 flex flex-col justify-between">
+      <div className="p-8 h-full flex flex-col justify-between">
         <div className="flex flex-col gap-6">
           <img
             src="https://avatars.githubusercontent.com/u/66894537"
@@ -38,7 +41,16 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="flex flex-row w-full justify-end">
+        <div className="flex flex-row w-full justify-between items-center">
+          <Button
+            isIconOnly
+            variant="light"
+            onPress={() => {
+              navigate("/settings");
+            }}
+          >
+            <Settings />
+          </Button>
           <span>
             Edit{" "}
             <code className="px-2 py-1 mx-1 rounded-md bg-neutral-500/25">
