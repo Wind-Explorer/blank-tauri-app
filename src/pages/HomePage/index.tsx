@@ -5,9 +5,9 @@ import { useNavigate } from "react-router-dom";
 export default function HomePage() {
   const navigate = useNavigate();
   return (
-    <div className="absolute inset-0 w-full h-full">
+    <div className="w-full h-full">
       {/* Beginning of starter */}
-      <div className="p-8 h-full flex flex-col justify-between">
+      <div className="p-8 h-full flex flex-col justify-between gap-4">
         <div className="flex flex-col gap-6">
           <img
             src="https://avatars.githubusercontent.com/u/66894537"

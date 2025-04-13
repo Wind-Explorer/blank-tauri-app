@@ -1,5 +1,7 @@
 import { Outlet } from "react-router-dom";
 import WindowTitlebar from "../components/WindowTitlebar";
+import { AnimatePresence } from "framer-motion";
+import AnimatedRoute from "../components/AnimatedRoute";
 
 export default function DefaultLayout() {
   return (
@@ -8,8 +10,12 @@ export default function DefaultLayout() {
         <div className="z-50">
           <WindowTitlebar />
         </div>
-        <div className="relative flex-grow h-full max-h-full overflow-auto bg-neutral-500/10">
-          <Outlet />
+        <div className="relative flex-grow min-h-full h-full max-h-full overflow-auto bg-neutral-950">
+          <AnimatePresence mode="wait">
+            <AnimatedRoute>
+              <Outlet />
+            </AnimatedRoute>
+          </AnimatePresence>
         </div>
       </div>
     </div>
