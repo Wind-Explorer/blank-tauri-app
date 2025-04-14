@@ -4,7 +4,9 @@
     "windows": [
       {
         "label": "main",
-        "decorations": false
+        "decorations": false,
+        "minWidth": 600,
+        "minHeight": 450
       }
     ]
   }
