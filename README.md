@@ -1,12 +1,17 @@
-# Tauri + React + Vite + Typescript + TailwindCSS + HeroUI + React Router DOM
+# Tauri + React + Vite + TypeScript + Tailwind CSS + HeroUI + React Router + i18next + Lucide Icons + Specta-TypeScript
 
-Adam's custom tauri app template for rapid prototyping
+Adam's custom tauri app template for starting new projects with a strong foundation.
 
 Uses Tauri 2.
 
 - Light / Dark mode support
-- Routing support
+- Routing support (with route transition animations)
 - Window resize optimization
 - Pure browser (no Tauri) support
+- Custom window titlebar
+- i18n-ready
+- Lucide Icons
+- HeroUI Component Library
+- Automatic Rust command bindings generation
 
-Hit `Cmd / Ctrl` + `Shift` + `H` to replace all occurances of `blank-tauri-app` and `blank_tauri_app` with a custom app name.
+Replace all occurances of `blank-tauri-app` and `blank_tauri_app` with a custom app name.
