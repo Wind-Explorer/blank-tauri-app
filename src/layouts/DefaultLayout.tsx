@@ -10,7 +10,7 @@ export default function DefaultLayout() {
         <div className="z-50">
           <WindowTitlebar />
         </div>
-        <div className="relative flex-grow min-h-full h-full max-h-full overflow-auto bg-neutral-950">
+        <div className="relative flex-grow min-h-full h-full max-h-full overflow-auto bg-neutral-50 dark:bg-neutral-950">
           <AnimatePresence mode="wait">
             <AnimatedRoute>
               <Outlet />
